@@ -2,11 +2,13 @@ var p1=prompt("Enter Player1 Name ");
 var p2=prompt("Enter Player2 Name ");
 
 var p1_dice=document.getElementById('pla_1');
-p1_dice.innerHTML=p1;
+if (p1==null) {p1="Player 1"}
+else p1_dice.innerHTML=p1;
 
 var p2_dice=document.getElementById('pla_2');
 //console.log(p2_dice);
-p2_dice.innerHTML=p2;
+if (p2==null) {p2="Player 2"}
+else p2_dice.innerHTML=p2;
 
 var randomNumber1=Math.floor((Math.random())*6)+1;
 // console.log(randomNumber1);
