@@ -1,5 +1,19 @@
-var p1=prompt("Enter Player1 Name ");
-var p2=prompt("Enter Player2 Name ");
+
+function requiredFunction1() {
+    var p1=prompt("Enter Player1 Name ");
+    if (p1 == "") {
+      requiredFunction1();
+    }
+  }
+  requiredFunction1();
+
+function requiredFunction2() {
+    var p2=prompt("Enter Player2 Name ");
+    if (p2 == "") {
+      requiredFunction2();
+    }
+  }
+  requiredFunction2();
 
 var p1_dice=document.getElementById('pla_1');
 if (p1==null) {p1="Player 1"}
