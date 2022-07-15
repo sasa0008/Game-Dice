@@ -37,14 +37,14 @@ var display;
 // console.log(win);
     if(randomNumber1>randomNumber2)
         {
-            display=p1+"  wins."
+            display="🎉"+p1+"  wins.🎉"
         }
     else if(randomNumber1==randomNumber2)
         {
             display="Draw"
         }    
     else{
-        display=p2+" wins."
+        display="🎉🎉"+p2+" wins.🎉🎉"
     }   
     
 win.innerHTML=display;    
